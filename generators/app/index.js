@@ -34,9 +34,12 @@ module.exports = class extends Generator {
 
  writing() {
 
-    this.fs.copy(
-      this.templatePath('testfolder'),
-      this.destinationPath(this.answers.name)
+    this.fs.copyTpl(
+      this.templatePath('projectfolder'),
+      this.destinationPath(this.answers.name),
+      { name: this.answers.name,
+       description: this.answers.description,
+       license: this.answers.license }
     );
   }
 

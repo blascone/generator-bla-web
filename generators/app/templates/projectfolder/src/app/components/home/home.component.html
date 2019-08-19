@@ -1,0 +1,9 @@
+<div class="col-md-6 col-md-offset-3">
+    <h1>Home</h1>
+    <div *ngIf="logged">
+      <p>You're logged in. Welcome {{user.firstName}} {{user.lastName}}</p>
+    </div>
+    <div *ngIf="!logged">
+      <p>Welcome!! Please login</p>
+    </div>
+</div>
