@@ -1,0 +1,16 @@
+{
+  "name": "generator-bla-web",
+  "version": "1.0.0",
+  "description": "bla generator",
+  "files": [
+    "generators"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "yeoman-generator": "^4.0.1"
+  }
+}
